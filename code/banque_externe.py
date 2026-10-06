@@ -1,7 +1,8 @@
 import requests
 import os
 
-dossier = r"C:\Users\imanc\Downloads\Projet_Photomosaique\banque_externe"
+DOSSIER_PROJET = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dossier = os.path.join(DOSSIER_PROJET, "banque_externe")
 os.makedirs(dossier, exist_ok=True)
 
 for i in range(1000):
