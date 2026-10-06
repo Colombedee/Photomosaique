@@ -4,7 +4,7 @@
 
 Projet réalisé en Python dans le cadre du cours **GIF-4105/7105 Photographie Algorithmique**, Université Laval (Hiver 2026).
 
-🔗 **[Voir le site du projet](https://colombedee.github.io/Photomosaique-/)**
+🔗 **[Voir le site du projet](https://colombedee.github.io/Photomosaique/)**
 
 ---
 
