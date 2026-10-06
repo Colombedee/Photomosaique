@@ -4,7 +4,7 @@ from PIL import Image
 
 def decouper_image(image_np, N):
     """
-    Divise l'image cible en une grille de blocs de taille N x N[cite: 17].
+    Divise l'image cible en une grille de blocs de taille N x N.
     """
     h, w, _ = image_np.shape
     nb_blocs_h = h // N
@@ -24,14 +24,14 @@ def decouper_image(image_np, N):
 
 def calculer_couleur_moyenne(bloc):
     """
-    Calcule la couleur moyenne d'un bloc (RGB)[cite: 18, 31].
+    Calcule la couleur moyenne d'un bloc (RGB).
     """
     return np.mean(bloc, axis=(0, 1))
 
 
 def assembler_image(liste_tuiles, nb_h, nb_w, N):
     """
-    Recrée l'image finale en plaçant les tuiles côte à côte[cite: 24, 25].
+    Recrée l'image finale en plaçant les tuiles côte à côte.
     """
     image_finale = np.zeros((nb_h * N, nb_w * N, 3), dtype=np.uint8)
 
