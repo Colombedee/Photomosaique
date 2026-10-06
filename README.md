@@ -8,6 +8,12 @@ Projet réalisé en Python dans le cadre du cours **GIF-4105/7105 Photographie A
 
 ---
 
+<p align="center">
+  <img src="images/Le_loup_lab2.png" alt="Photomosaïque d'un loup" width="600">
+</p>
+
+---
+
 ## 👥 Équipe
 
 - Colombe Diallo
