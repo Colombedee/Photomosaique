@@ -43,6 +43,14 @@ Le projet compare également l'impact de différents **espaces colorimétriques*
 
 ---
 
+### Répartition du travail
+
+- **Colombe Diallo** : implémentation de la **mosaïque uniforme** (découpage en blocs et ajustement colorimétrique en RGB et LAB) et constitution de la **banque d'images** utilisée pour la photomosaïque.
+- **Tadagbé Dhossou** : implémentation de la **vraie photomosaïque** (recherche de correspondance dans la banque d'images).
+- **Ensemble** : amélioration des deux approches, comparaison des critères de correspondance et des espaces colorimétriques.
+
+---
+
 ## 🛠️ Technologies
 
 - **Langage** : Python
