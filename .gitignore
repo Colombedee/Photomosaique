@@ -1,0 +1,12 @@
+   # Banques d'images (non publiées)
+   banque/
+   banque_externe/
+
+   # Résultats et cache générés
+   resultats/
+   cache/
+   code/*.png
+
+   # Python
+   __pycache__/
+   *.pyc
