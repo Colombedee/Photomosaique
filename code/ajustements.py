@@ -24,7 +24,7 @@ def ajustement_multiplication(tuile, couleur_bloc_rgb):
 
 def ajustement_translation_lab(tuile_rgb, couleur_bloc_rgb):
     """
-    Méthode 2 : Ajustement par translation dans l'espace LAB. [cite: 23]
+    Méthode 2 : Ajustement par translation dans l'espace LAB. 
     Plus précis pour la perception humaine.
     """
     # 1. Conversion de la tuile et de la couleur cible en LAB
