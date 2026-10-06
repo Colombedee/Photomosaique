@@ -59,6 +59,37 @@ Le projet compare également l'impact de différents **espaces colorimétriques*
 
 ---
 
+## 🚀 Installation et exécution
+
+**Prérequis** : Python 3.10 ou plus récent.
+
+```bash
+git clone https://github.com/Colombedee/Photomosaique.git
+cd Photomosaique
+pip install -r requirements.txt
+cd code
+```
+
+### Mosaïque uniforme
+```bash
+python main_unique_mosaique.py
+```
+Le programme demande une taille de bloc N, puis ouvre deux fenêtres pour choisir l'image cible et la tuile. Il génère la mosaïque ainsi que des variantes de teintes (bleue, dorée, rouge).
+
+### Vraie photomosaïque
+La banque d'images originale n'est pas incluse. Vous pouvez utiliser votre propre banque d'images ou télécharger 1000 images libres (ou plus) de droits depuis [Picsum](https://picsum.photos) :```bash
+python banque_externe.py
+```
+Puis lancez :
+```bash
+python main_photo_mosaique.py
+```
+Répondez `o` à « Banque externe ? ». Vous pouvez aussi placer vos propres images dans un dossier `banque/` à la racine du projet et répondre `n`.
+
+Les résultats sont enregistrés dans le dossier `resultats/`, avec une comparaison des trois critères : couleur moyenne RGB, couleur moyenne LAB et intersection d'histogrammes.
+
+---
+
 ## 📂 Structure du dépôt
 
 Photomosaique-/
@@ -69,8 +100,9 @@ Photomosaique-/
 
 ├── code/ # Code source Python
 
-└── presentation.pdf # Document de présentation du projet
+├── presentation.pdf # Document de présentation du projet
 
+└── requirements.txt   # Dépendances Python
 
 ---
 
