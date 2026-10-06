@@ -4,8 +4,10 @@ import random
 import tkinter as tk
 from tkinter import filedialog
 
-DOSSIER_IMG = r"C:\Users\imanc\Downloads\Projet_Photomosaique\img"
-OUTPUT_PATH = r"C:\Users\imanc\Downloads\Projet_Photomosaique\resultats"
+   DOSSIER_PROJET = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+   DOSSIER_IMG = os.path.join(DOSSIER_PROJET, "banque")
+   DOSSIER_BANQUE_EXTERNE = os.path.join(DOSSIER_PROJET, "banque_externe")
+   OUTPUT_PATH = os.path.join(DOSSIER_PROJET, "resultats")
 
 def mosaique_aleatoire(dossier_img=DOSSIER_IMG, output_path=OUTPUT_PATH, values_n=None):
     if values_n is None:
@@ -65,8 +67,8 @@ if __name__ == "__main__":
 
     # Demander la banque
     banque = input("Banque externe ? (o/n) : ").strip().lower()
-    dossier = r"C:\Users\imanc\Downloads\Projet_Photomosaique\banque_externe" if banque == 'o' else DOSSIER_IMG
-
+    dossier = DOSSIER_BANQUE_EXTERNE if banque == 'o' else DOSSIER_IMG
+    
     # Demander le mode
     mode = input("Choisir l'image manuellement ? (o/n) : ").strip().lower()
     if mode == 'o':
