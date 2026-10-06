@@ -1,0 +1,7 @@
+   numpy
+   Pillow
+   pillow-heif
+   scipy
+   scikit-image
+   matplotlib
+   requests
